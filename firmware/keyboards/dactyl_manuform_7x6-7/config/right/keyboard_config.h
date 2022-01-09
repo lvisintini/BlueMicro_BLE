@@ -51,7 +51,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
     {k30,   k31,   k32,   k33,   k34,   k35,   KC_NO}, \
     {k40,   k41,   k42,   k43,   k44,   k45,   KC_NO}, \
     {KC_NO, KC_NO, k52,   k53,   k54,   k55,   KC_NO}, \
-    {k60,   k61,   k62,   k63,   k64,   KC_NO  KC_NO}  \
+    {k60,   k61,   k62,   k63,   k64,   KC_NO, KC_NO}  \
 } 
 #else
 #define KEYMAP( \
@@ -71,7 +71,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
     {k30,   k31,   k32,   k33,   k34,   k35,   k36  }, \
     {k40,   k41,   k42,   k43,   k44,   k45,   k46  }, \
     {KC_NO, KC_NO, k52,   k53,   k54,   k55,   k56  }, \
-    {k60,   k61,   k62,   k63,   k64,   KC_NO  KC_NO}  \
+    {k60,   k61,   k62,   k63,   k64,   KC_NO, KC_NO}  \
 }
 #endif
 
