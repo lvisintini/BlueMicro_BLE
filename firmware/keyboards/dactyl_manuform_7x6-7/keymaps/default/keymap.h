@@ -68,7 +68,7 @@ void process_user_macros(uint16_t macroid);
 #define USER_LAYER_FUNCTION   0 
 void process_user_layers(uint16_t layermask);
 
-// void setupKeymap();
+void setupKeymap();
 extern std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix;
 extern void addStringToQueue(const char* str);
 extern void addKeycodeToQueue(const uint16_t keycode);
