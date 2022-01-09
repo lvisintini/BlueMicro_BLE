@@ -55,32 +55,10 @@ void process_user_layers(uint16_t layermask)
 
 #if KEYBOARD_SIDE == LEFT
 
-/* Qwerty
- * ,-----------------------------------------.
- * |  F12 |  F1  |  F2  |  F3  |  F4  |  F5  |
- * |-----------------------------------------|
- * | Esc  |   1  |   2  |   3  |   4  |   5  | 
- * |-----------------------------------------|
- * | Tab  |   Q  |   W  |   E  |   R  |   T  | 
- * |------+------+------+------+------+------|
- * | Shift|   A  |   S  |   D  |   F  |   G  |
- * |------+------+------+------+------+------|
- * | Ctrl |   Z  |   X  |   C  |   V  |   B  |
- * `------+------+------+------+------+------'
- *               |   [  |   ]  |
- *               `---------------------------.
- *                             |Lower |Space |
- *                             `-------------------------. 
- *                                           | Tab | Home|
- *                                           ------------| 
- *                                           | BSpc|  `  |
- *                                           ------------' 
- */
-
 std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     {KEYMAP(
         KC_F5,  KC_F4,  KC_F3,   KC_F2,   KC_F1,    KC_ESC,      \
-        KC_5 ,  KC_4,   KC_3,    KC_2,    KC_1,     KC_GRAVE,    \
+        KC_5,   KC_4,   KC_3,    KC_2,    KC_1,     KC_GRAVE,    \
         KC_T,   KC_R,   KC_E,    KC_W,    KC_Q,     KC_TAB,      \
         KC_G,   KC_F,   KC_D,    KC_S,    KC_A,     KC_CAPS,     \
         KC_B,   KC_V,   KC_C,    KC_X,    KC_Z,     KC_LSFT,     \
