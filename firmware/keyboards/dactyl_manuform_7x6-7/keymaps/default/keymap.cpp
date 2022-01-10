@@ -62,7 +62,7 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
         KC_T,   KC_R,   KC_E,    KC_W,    KC_Q,     KC_TAB,      \
         KC_G,   KC_F,   KC_D,    KC_S,    KC_A,     KC_CAPS,     \
         KC_B,   KC_V,   KC_C,    KC_X,    KC_Z,     KC_LSFT,     \
-                        KC_LWIN, _______, KC_LALT,  KC_LCTL,     \
+                        KC_LWIN, L_LOWER, KC_LALT,  KC_LCTL,     \
         KC_PGDN,KC_END, KC_HOME, KC_PGUP, KC_MUTE                \
     )};
 
@@ -76,7 +76,7 @@ void setupKeymap() {
             _______,    _______,    _______,    _______,    _______,     _______,    \
             _______,    _______,    _______,    _______,    _______,     _______,    \
             _______,    _______,    _______,    _______,    _______,     _______,    \
-                                    _______,    _______,    _______,     _______,    \
+                                    L_LOWER,    L_RAISE,    _______,     _______,    \
             _______,    _______,    _______,    _______,    _______                  \
         );
 
@@ -135,13 +135,13 @@ void process_user_layers(uint16_t layermask) {
 
 std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     {KEYMAP(
-        KC_F6,  KC_F7,  KC_F8,   KC_F9,   KC_F10,   KC_F11,   KC_F12,     \
-        KC_6,   KC_7,   KC_8,    KC_9,    KC_0,     KC_MINS,  KC_EQL,     \
-        KC_Y,   KC_U,   KC_I,    KC_O,    KC_P,     KC_LBRC,  KC_RBRC,    \
-        KC_H,   KC_J,   KC_K,    KC_L,    KC_SCLN,  KC_QUOT,  KC_BSLS,    \
-        KC_N,   KC_M,   KC_COMMA,KC_DOT,  KC_SLSH,  KC_UP,    KC_RSHIFT,  \
-                        KC_VOLD, KC_VOLUP,KC_RIGHT, KC_DOWN,  KC_LEFT,    \
-        KC_ENT, KC_INS, KC_DEL, KC_BSPC,  KC_SPACE                        \
+        KC_F6,  KC_F7,  KC_F8,   KC_F9,     KC_F10,   KC_F11,   KC_F12,           \
+        KC_6,   KC_7,   KC_8,    KC_9,      KC_0,     KC_MINS,  KC_EQL,           \
+        KC_Y,   KC_U,   KC_I,    KC_O,      KC_P,     KC_LBRC,  KC_RBRC,          \
+        KC_H,   KC_J,   KC_K,    KC_L,      KC_SCLN,  KC_QUOTE, KC_NONUS_BSLASH,  \
+        KC_N,   KC_M,   KC_COMMA,KC_DOT,    KC_SLSH,  KC_UP,    KC_RSHIFT,        \
+                        KC_CALC, KC_PSCREEN,KC_LEFT,  KC_DOWN,  KC_RIGHT,         \
+        KC_ENT, KC_INS, KC_DEL,  KC_BSPC,   KC_SPACE                              \
     )};
 
  
@@ -167,8 +167,8 @@ void setupKeymap() {
             _______,    _______,    _______,    _______,    _______,     _______,    _______,    \
             _______,    _______,    _______,    _______,    _______,     _______,    _______,    \
             _______,    _______,    _______,    _______,    _______,     _______,    _______,    \
-            _______,    _______,    _______,    _______,    _______,     _______,    _______,    \
-                                    _______,    _______,    _______,     _______,    _______,    \
+            _______,    KC_MUTE,    _______,    _______,    _______,     KC_VOLU,    _______,    \
+                                    _______,    _______,    _______,     KC_VOLD,    _______,    \
             _______,    _______,    _______,    _______,    _______                              \
         );
     
